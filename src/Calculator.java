@@ -4,7 +4,7 @@ public class Calculator {
 			return 0;
 		else if (input.length() == 1)
 			return Integer.parseInt(input);
-		String[] numberSeperated = input.split(",");
+		String[] numberSeperated = input.split(",|\n");
 		int result = getSum(numberSeperated);
 		return result;
 	}
