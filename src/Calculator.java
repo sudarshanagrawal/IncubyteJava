@@ -20,8 +20,11 @@ public class Calculator {
 
 	public static int getSum(String[] numbers) {
 		int result = 0;
-		for (String number : numbers)
-			result += Integer.parseInt(number);
+		for (String number : numbers) {
+			int intNumber = Integer.parseInt(number);
+			if (intNumber <= 1000)
+				result += intNumber;
+		}
 		return result;
 	}
 	public static void checkForNegativeNumbers(String[] numbers) {

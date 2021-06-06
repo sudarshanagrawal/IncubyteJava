@@ -64,6 +64,11 @@ class CalculatorTest {
 		Calculator.add("-1,2,-3");
 		} catch (IllegalArgumentException e) {
 			assertEquals(e.getMessage(), "negatives not allowed -1,-3");
+	
+	}			
 	}
+	@Test
+	void numberGreaterThanThousandTest() {
+		assertEquals(2, Calculator.add("2,1001"));
 	}
 }
