@@ -71,4 +71,8 @@ class CalculatorTest {
 	void numberGreaterThanThousandTest() {
 		assertEquals(2, Calculator.add("2,1001"));
 	}
+	@Test
+	void customLongDelimiterTest() {
+		assertEquals(6, Calculator.add("//[@@]\n1@@2@@3"));
+	}
 }
