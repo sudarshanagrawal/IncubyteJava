@@ -22,5 +22,21 @@ class CalculatorTest {
 	void twoValueTest() {
 		assertEquals(3, Calculator.add("1,2"));
 	}
+	@Test
+	void threeValueTest() {
+		assertEquals(6, Calculator.add("1,2,3"));
+	}
+	@Test
+	void fourValueTest() {
+		assertEquals(10, Calculator.add("1,2,3,4"));
+	}
+	@Test
+	void fiveValueTest() {
+		assertEquals(15, Calculator.add("1,2,3,4,5"));
+	}
+	@Test
+	void sixValueTest() {
+		assertEquals(21, Calculator.add("1,2,3,4,5,6"));
+	}
 
 }
