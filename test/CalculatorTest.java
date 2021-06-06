@@ -80,7 +80,7 @@ class CalculatorTest {
 		assertEquals(6, Calculator.add("//[@][%]\n1@2%3"));
 	}
 	@Test
-	void customMultipleLongDelimiterTest() {
+	void customMultipleLongDelimiterTest2() {
 		assertEquals(6, Calculator.add("//[@@][%%]\n1@@2%%3"));
 	}
 }
