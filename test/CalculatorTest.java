@@ -50,5 +50,20 @@ class CalculatorTest {
 	void customDelimiterTest2() {
 		assertEquals(6, Calculator.add("//;\n1\n2;3"));
 	}
-
+	@Test
+	void negativeNumberTest() {
+		try {
+			Calculator.add("5,-4");
+		} catch (IllegalArgumentException e) {
+			assertEquals(e.getMessage(), "negatives not allowed -4");
+		}
+	}
+	@Test
+	void negativeNumberTest2() {
+		try {
+		Calculator.add("-1,2,-3");
+		} catch (IllegalArgumentException e) {
+			assertEquals(e.getMessage(), "negatives not allowed -1,-3");
+	}
+	}
 }
